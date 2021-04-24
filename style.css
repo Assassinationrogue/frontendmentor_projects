@@ -6,6 +6,7 @@
     --neutral-color-1: hsl(0, 0%, 0%);
     --neutral-color-2: hsl(0, 0%, 48%);
     --neutral-color-3: rgb(238, 237, 237);
+    --neutral-color-4:  rgb(219, 216, 216);
     --weight-1: 400;
     --weight-2: 500;
     --weight-3: 700;
@@ -152,7 +153,7 @@ header > nav > ul > li > a{
 }
 
 .bookmark{
-    background-color: var(--neutral-color-3);
+    background-color:  rgb(218, 216, 216);
     padding:10px 40px;
     border: none;
     margin: 10px;
@@ -198,7 +199,7 @@ header > nav > ul > li > a{
     background-color: var(--neutral-color-3);
     border-radius: 10px;
     margin-bottom: 20px;
-
+    margin-top: 20px;
 }
 
 .inner-bar{
@@ -207,3 +208,26 @@ header > nav > ul > li > a{
     background-color: var(--primary-color-1);
     border-radius: inherit;
 }
+
+/*section part III*/
+
+.essection-3{
+    margin: 10px 20px;
+    padding: 40px;
+}
+
+.section-title{
+    
+}
+
+.about_site{
+    margin-top: 30px;
+}
+
+.info-box{
+    margin-top: 30px;
+    border: 2px solid var(--neutral-color-4);
+    border-radius: 10px;
+    padding: 20px;
+}
+
