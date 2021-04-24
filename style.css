@@ -179,3 +179,13 @@ header > nav > ul > li > a{
     display: flex;
     justify-content: space-between;
 }
+
+.report_list > li {
+    border-right: 1px solid var(--neutral-color-2);
+    padding-right: 50px;
+}
+
+.report_list > li > h4{
+    font-weight: var(--weight-1);
+    color: var(--neutral-color-2);
+}
