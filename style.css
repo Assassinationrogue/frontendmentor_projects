@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-color-1: hsl(176, 50%, 47%);
+    --primary-color-2: hsl(176, 72%, 28%);
+    --neutral-color-1: hsl(0, 0%, 0%);
+    --neutral-color-2: hsl(0, 0%, 48%);
+    --weight-1: 400;
+    --weight-2: 500;
+    --weight-3: 700;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: rgb(230, 230, 230);
+    font-family: 'Commissioner',sans-serif;
+}
+
+/* head part */
+.container{
+    color: white;
+    background-image: url("../images/image-hero-desktop.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    height: 40vh;
+    
+}
+
+header{
+    margin: 0px 20px ;
+}
+
+header > nav > ul{
+    display: flex;
+
+}
+
+.logo{
+    margin: 0px 5%;
+    padding: 2.5% 0px;
+    font-weight: var(--weight-3);
+    font-size: 1.5em;
+    user-select: none;
+    -moz-user-select: none; /* for mozilla */
+    -ms-user-select: none; /* for internet explorer*/
+    -webkit-user-select: none; /* for safari */
+    -o-user-select: none;
+}
+
+header > nav > ul > li {
+    position: relative;
+    list-style: none;
+    margin: 0px 20px;
+    left: 70%;  
+    bottom: 70px;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+.container_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content_box{
+    height: 250vh;
+    width: 100vh;
+    /* background-color: white; */
+    margin-top: -5%;
+    margin-left: 26%;
+    margin-bottom: 10%;
+    border-radius: 10px;
+}
+
+/* content part I */
+.section_outer{
+    background-color: white;
+    width: inherit;
+    border-radius: 10px;
+}
+.es-section-1{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    line-height: 2;
+    
+}
+
+.es-section-1 > p{
+    color: var(--neutral-color-2);
+    font-weight: var(--weight-1);
+}
+
+.mastercraft-logo{
+    position: absolute;
+    z-index: 5;
+    top: 25%;
+}
+
+/*button part of section part I*/
+
+.bottom_part{
+    width: 88%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;   
+}
+
+.bookmark-logo{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    margin-right:30px ;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    z-index: 10;
+    
+    /* visibility: hidden; */
+}
+
+.button-style{
+    border-radius: 50px;
+    padding: 0px 10px;
+
+}
+
+.back-this-project{
+    margin: 10px;
+    padding: 10px 20px;
+    font-weight: var(--weight-3);
+    background-color: var(--primary-color-2);
+    color: white;
+    border: none;
+}
+
+.back-this-project:hover{
+    cursor: pointer;
+    background-color: var(--primary-color-1);
+}
+
+.bookmark{
+    background-color: rgb(226, 225, 225);
+    padding:10px 40px;
+    border: none;
+    margin: 10px;
+    color: var(--primary-color-2);
+    font-weight: var(--weight-3);
+    
+    
+}
+
+.bookmark:hover{
+    background-color: rgb(238, 237, 237);
+    cursor: pointer;
+}
+
