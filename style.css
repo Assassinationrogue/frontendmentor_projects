@@ -29,10 +29,8 @@ body{
     background-image: url("../images/image-hero-desktop.jpg");
     background-position: center;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
-    
-    height: 40vh;
-    
+    background-repeat: no-repeat;    
+    height: 40vh;    
 }
 
 header{
@@ -96,8 +94,7 @@ header > nav > ul > li > a{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    line-height: 2;
-    
+    line-height: 2;    
 }
 
 .es-section-1 > p{
@@ -159,9 +156,7 @@ header > nav > ul > li > a{
     border: none;
     margin: 10px;
     color: var(--primary-color-2);
-    font-weight: var(--weight-3);
-    
-    
+    font-weight: var(--weight-3);    
 }
 
 .bookmark:hover{
@@ -169,3 +164,18 @@ header > nav > ul > li > a{
     cursor: pointer;
 }
 
+/* section part II*/
+.es-section-2{
+    margin-top: 20px;
+    padding: 20px 0px;
+    width: 85%;
+    margin-left: 50px;
+}
+
+.report_list{
+    /* background-color: blue; */
+    margin: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
