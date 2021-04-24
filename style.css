@@ -5,6 +5,7 @@
     --primary-color-2: hsl(176, 72%, 28%);
     --neutral-color-1: hsl(0, 0%, 0%);
     --neutral-color-2: hsl(0, 0%, 48%);
+    --neutral-color-3: rgb(238, 237, 237);
     --weight-1: 400;
     --weight-2: 500;
     --weight-3: 700;
@@ -151,7 +152,7 @@ header > nav > ul > li > a{
 }
 
 .bookmark{
-    background-color: rgb(226, 225, 225);
+    background-color: var(--neutral-color-3);
     padding:10px 40px;
     border: none;
     margin: 10px;
@@ -188,4 +189,21 @@ header > nav > ul > li > a{
 .report_list > li > h4{
     font-weight: var(--weight-1);
     color: var(--neutral-color-2);
+}
+
+.progress_bar{
+    margin-left: 20px ;
+    width: 550px;
+    height: 15px;
+    background-color: var(--neutral-color-3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.inner-bar{
+    width: 87%;
+    height: inherit;
+    background-color: var(--primary-color-1);
+    border-radius: inherit;
 }
