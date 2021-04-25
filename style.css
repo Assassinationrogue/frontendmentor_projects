@@ -345,3 +345,21 @@ header > nav > ul > li > a{
 .WO_reward >.top-section>.top-section-part_1> h3{
     margin-left: 10px;
 }
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section-part_1{
+    display: flex;
+    margin-left: 10px;
+}
+
+.top-section-part_2{
+    margin-left: 20px;
+}
+
+.twenty_five{
+    color: var(--primary-color-1);
+}
