@@ -183,6 +183,9 @@ header > nav > ul > li > a{
     padding: 20px 0px;
     width: 85%;
     margin-left: 50px;
+    position: relative;
+    z-index: 1;
+    visibility: visible;  /* needs an attention of javascript*/
 }
 
 .report_list{
@@ -301,13 +304,22 @@ header > nav > ul > li > a{
 /* for "Back this project"  button*/
 
 .pledge_button{
+    visibility: visible ;
     height: 50vh;
     width: 100vh;
     background-color: white;
     margin-top: -5%;
     margin-left: 26%;
     margin-bottom: 10%;
-    border-radius: 10px;   
+    border-radius: 10px; 
+    position: relative;
+    transform: translate(-26%,-420%);  
+    padding: 30px 40px;
+    z-index: 20;
+}
+
+.pledge_button * p,p{
+    color: var(--neutral-color-2);
 }
 
 .no_reward{
@@ -349,6 +361,7 @@ header > nav > ul > li > a{
 .top-section{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .top-section-part_1{
@@ -361,5 +374,15 @@ header > nav > ul > li > a{
 }
 
 .twenty_five{
-    color: var(--primary-color-1);
+    color: var(--primary-color-1x);
 }
+
+.box-styling{
+    margin-top: 40px;
+    border: 1px solid var(--neutral-color-4);
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px var(--neutral-color-3);
+    padding: 20px;
+    
+}
+
