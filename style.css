@@ -227,10 +227,6 @@ header > nav > ul > li > a{
     padding: 40px;
 }
 
-.section-title{
-    
-}
-
 .about_site{
     margin-top: 30px;
 }
@@ -287,6 +283,8 @@ header > nav > ul > li > a{
     cursor: pointer;
 }
 
+
+/* should be handled with javascript */
 .when-zero{
     user-select: none;
     opacity: 0.5;
@@ -299,3 +297,42 @@ header > nav > ul > li > a{
 
 }
 
+
+/* for "Back this project"  button*/
+
+.pledge_button{
+    height: 50vh;
+    width: 100vh;
+    background-color: white;
+    margin-top: -5%;
+    margin-left: 26%;
+    margin-bottom: 10%;
+    border-radius: 10px;   
+}
+
+.no_reward{
+   appearance: none;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -o-appearance: none;
+    background-color: #fafafa;
+    border: 5px solid #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    /* border-width: 5px; */
+}
+
+.no_reward:active, .no_reward:checked:active{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); /* why inset?*/
+}
+
+.no_reward:checked{
+    
+    background-color: var(--primary-color-1);
+    border: 1px solid #fff;
+    border-width: 5px;
+}
