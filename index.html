@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Crowdfunding product page</title>
-
+  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -35,15 +35,20 @@
 
             <section class="es-section-1">
               
-              <img src="images/logo-mastercraft.svg" alt="mastercraft-xx" class="mastercraft-logo">
+              <img src="images/logo-mastercraft.svg" alt="mastercraft-xx" class="mastercraft-logo"><br>
                 <h3>Mastercraft Bamboo Monitor Riser</h3>
                 <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
                 <div class="bottom_part">
 
                     <button class="back-this-project button-style">Back this project</button>
 
-                    <div class="compete_button">
-                      <img src="images/icon-bookmark.svg" alt="bookmark" class="bookmark-logo">
+                    <div class="complete_button">
+                      <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg" class="bookmark-logo">
+                        <g fill="none" fill-rule="evenodd">
+                          <circle fill="hsl(176, 72%, 28%)" cx="28" cy="28" r="28" class="svg_circle"/>
+                          <path fill="#fff" d="M23 19v18l5-5.058L33 37V19z"/>
+                        </g>
+                      </svg>
                       <button class="bookmark button-style">
                         Bookmark
                       </button>
@@ -118,7 +123,7 @@
                   <button class="select-button">Select Reward</button>
               </div>
           </div>
-          <div class="info-box">
+          <div class="info-box when-zero">
             <div class="title_tab">
               <h4 class="title-1">Mahogany Special Edition</h4>
               <h4 class="title-2">Pledge $200 or more</h4>
@@ -132,7 +137,7 @@
                     <h1>0</h1>
                     <h5>left</h5>
                 </div>
-                <button class="select-button">Select Reward</button>
+                <button class="select-button" disabled>Select Reward</button>
             </div>
         </div>
           </section>
@@ -154,11 +159,9 @@
       
           
           
-          
-          0 left
-          Out of Stock
       
           <!-- Selection modal start -->
+
       
           Back this project
           Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
@@ -206,6 +209,8 @@
           <!-- Selection modal end -->
       
           <!-- Success modal start -->
+
+          
       
           Thanks for your support!
           Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get

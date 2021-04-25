@@ -80,7 +80,7 @@ header > nav > ul > li > a{
     margin-top: -5%;
     margin-left: 26%;
     margin-bottom: 10%;
-    border-radius: 10px;
+    border-radius: 10px;   
 }
 
 /* content part I */
@@ -95,7 +95,8 @@ header > nav > ul > li > a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    padding-top: 0px;
     line-height: 2;    
 }
 
@@ -105,9 +106,10 @@ header > nav > ul > li > a{
 }
 
 .mastercraft-logo{
-    position: absolute;
+    position: relative;
     z-index: 5;
-    top: 25%;
+    
+    top: -30px;
 }
 
 /*button part of section part I*/
@@ -117,25 +119,33 @@ header > nav > ul > li > a{
     /* background-color: black; */
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;   
+    margin-top: 20px;  
+    margin-bottom: 30px; 
 }
 
 .bookmark-logo{
     position: absolute;
-    height: 35px;
-    width: 35px;
-    margin-right:30px ;
-    margin-top: 10px;
-    margin-bottom: 10px ;
+    /* height: 35px;
+    width: 35px; */
+    margin-right:10px ;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: -8px;
     z-index: 10;
     
     /* visibility: hidden; */
 }
-
+.bookmark-logo > g > circle:hover{
+    fill: var(--neutral-color-2);
+}
 .button-style{
     border-radius: 50px;
     padding: 0px 10px;
 
+}
+.complete_button{
+    /* background-color: black; */
+    width: 30%;
 }
 
 .back-this-project{
@@ -161,8 +171,9 @@ header > nav > ul > li > a{
     font-weight: var(--weight-3);    
 }
 
-.bookmark:hover{
+.bookmark,.svg_circle:hover{
     background-color: rgb(238, 237, 237);
+    fill: var(--neutral-color-2);
     cursor: pointer;
 }
 
@@ -275,3 +286,16 @@ header > nav > ul > li > a{
     background-color: var(--primary-color-2);
     cursor: pointer;
 }
+
+.when-zero{
+    user-select: none;
+    opacity: 0.5;
+    
+}
+
+.when-zero > .bottom_tab > .select-button:disabled{
+    background-color: var(--neutral-color-2);
+    cursor:not-allowed;
+
+}
+
