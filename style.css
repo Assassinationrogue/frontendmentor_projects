@@ -185,7 +185,7 @@ header > nav > ul > li > a{
     margin-left: 50px;
     position: relative;
     z-index: 1;
-    visibility: hidden;  /* needs an attention of javascript*/
+    visibility: visible;  /* needs an attention of javascript*/
 }
 
 .report_list{
@@ -307,7 +307,7 @@ header > nav > ul > li > a{
 
 .pledge_button{
     visibility: visible ;
-    height: 1000px;
+    height: 1100px;
     width: 750px;
     background-color: white;
     margin-top: -5%;
