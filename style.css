@@ -378,7 +378,7 @@ header > nav > ul > li > a{
 }
 
 .top-section-part_2{
-    margin-left:250px ;
+    transform: translateX(350%) ;
 }
 
 .box-styling{
