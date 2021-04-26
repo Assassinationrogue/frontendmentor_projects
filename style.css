@@ -354,6 +354,7 @@ header > nav > ul > li > a{
     background-color: var(--primary-color-1);
     border: 1px solid #fff;
     border-width: 5px;
+
 }
 
 .WO_reward{
@@ -377,11 +378,7 @@ header > nav > ul > li > a{
 }
 
 .top-section-part_2{
-    margin-left: 20px;
-}
-
-.twenty_five{
-    color: var(--primary-color-1x);
+    margin-left:250px ;
 }
 
 .box-styling{
@@ -405,7 +402,7 @@ header > nav > ul > li > a{
     border-top: 1px solid var(--neutral-color-4);
 }
 
-#valueBox, .Continue{
+.Continue{
     padding: 10px 20px;
     border-radius: 50px;
 }
@@ -413,6 +410,8 @@ header > nav > ul > li > a{
 #valueBox{
     width: 25%;
     border: none;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 #valueBox:active{
@@ -427,8 +426,9 @@ header > nav > ul > li > a{
     border: none;
     color: white;
     font-weight: var(--weight-3);
-    
+    margin-left: 20px;
 }
+
 .Continue:hover{
     cursor: pointer;
 
@@ -454,4 +454,5 @@ header > nav > ul > li > a{
     padding-left: 6px;
     padding-right: 2px;
 }
+
 
