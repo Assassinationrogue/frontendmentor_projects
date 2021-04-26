@@ -391,6 +391,7 @@ header > nav > ul > li > a{
 
 .box-styling > p{
     margin:20px 0px;
+
 }
 
 .bottom-part-back-this-project{
@@ -400,3 +401,26 @@ header > nav > ul > li > a{
     border-top: 1px solid var(--neutral-color-4);
 }
 
+#valueBox, .Continue{
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+#valueBox{
+    width: 25%;
+    border: 1px solid var(--primary-color-2) ;
+}
+
+#valueBox:active{
+    outline: none;
+}
+
+#valueBox:focus{
+    outline: none;
+}
+.Continue{
+    
+}
+.button-back-this-project{
+    margin-right: -100px;
+}
