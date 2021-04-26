@@ -307,7 +307,7 @@ header > nav > ul > li > a{
 
 .pledge_button{
     visibility: visible ;
-    height: 600px;
+    height: 800px;
     width: 750px;
     background-color: white;
     margin-top: -5%;
@@ -323,6 +323,10 @@ header > nav > ul > li > a{
 
 .pledge_button * p,p{
     color: var(--neutral-color-2);
+}
+
+.pledge_button * h3{
+    font-size: 16px;
 }
 
 .no_reward{
@@ -408,7 +412,7 @@ header > nav > ul > li > a{
 
 #valueBox{
     width: 25%;
-    border: 1px solid var(--primary-color-2) ;
+    border: none;
 }
 
 #valueBox:active{
@@ -419,8 +423,35 @@ header > nav > ul > li > a{
     outline: none;
 }
 .Continue{
+    background-color: var(--primary-color-1);
+    border: none;
+    color: white;
+    font-weight: var(--weight-3);
     
+}
+.Continue:hover{
+    cursor: pointer;
+
 }
 .button-back-this-project{
     margin-right: -100px;
+    display: flex;
+    color: grey;
+    font-size: 18px;
 }
+
+
+.textBoxWrapper{
+    display: flex;
+    border: 1px solid var(--primary-color-1);
+    width: 30%;
+    border-radius: 50px;
+
+}
+
+.textBox{
+    padding-top: 2px ;
+    padding-left: 6px;
+    padding-right: 2px;
+}
+
