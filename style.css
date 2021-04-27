@@ -80,7 +80,6 @@ header > nav > ul > li > a{
     /* background-color: white; */
     margin-top: -5%;
     margin-left: 26%;
-    margin-bottom: 10%;
     border-radius: 10px;   
 }
 
@@ -466,14 +465,33 @@ header > nav > ul > li > a{
 
 .support_window{
     height: 250px;
-    width: 550px;
+    width: 400px;
     background-color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: translate(35%,-1017%);
+    position: relative;
+    z-index: 20;
+    visibility: visible;
+    border-radius: 10px;
+}
 
+.got_it{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--primary-color-1);
+    font-weight: var(--weight-3);
+    color: white;
+}
+
+.got_it:hover{
+    cursor: pointer;
+    background-color: var(--primary-color-2);
 }
 
 .support_window > h2{
