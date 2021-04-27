@@ -76,7 +76,7 @@ header > nav > ul > li > a{
 }
 .content_box{
     height: 250vh;
-    width: 100vh;
+    width: 45vw;
     /* background-color: white; */
     margin-top: -5%;
     margin-left: 26%;
@@ -323,6 +323,12 @@ header > nav > ul > li > a{
     transition: all 0.3s ease-in;
 }
 
+.box-styling:hover{
+    cursor:pointer;
+}
+
+
+
 .pledge_button * p,p{
     color: var(--neutral-color-2);
 }
@@ -473,7 +479,8 @@ header > nav > ul > li > a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(35%,-735%);
+    bottom: 160%;
+    left: 20%;
     position: relative;
     z-index: 20;
     visibility: hidden;

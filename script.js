@@ -7,6 +7,7 @@ const bookmarkLogo = document.querySelector('.svg_circle')
 const gotItBtn = document.querySelector('.got_it');
 const supportWindow = document.querySelector('.support_window');
 const continueBtn = document.querySelector('.Continue');
+const checkBoxes = document.querySelector('.no_reward');
 
 let count = 0;
 button1.addEventListener('click',(clicked)=>{
@@ -40,3 +41,5 @@ bookmarkButton.addEventListener('click',(clickedEvent)=>{
     }
 
 });
+
+console.log(checkBoxes)
