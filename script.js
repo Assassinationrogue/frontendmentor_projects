@@ -3,7 +3,7 @@ const bookmarkButton = document.querySelector('.bookmark');
 const backThisProjectWindow = document.querySelector('.pledge_button');
 const closeBtn = document.querySelector('.close_btn');
 const secondContainer = document.querySelector('.container_2');
-const bookmark = document.querySelector('.bookmark');
+const bookmarkLogo = document.querySelector('.svg_circle')
 const gotItBtn = document.querySelector('.got_it');
 const supportWindow = document.querySelector('.support_window');
 const continueBtn = document.querySelector('.Continue');
@@ -18,14 +18,6 @@ closeBtn.addEventListener('click',(clicked)=>{
     backThisProjectWindow.style.visibility = 'hidden';
 })
 
-
-bookmarkButton.addEventListener('click',(clicked)=>{
-    count++;
-    let currEvent = count % 2 === 0 ? 'hidden':'visible';
-    bookmark.style.visibility = currEvent;
-    bookmark.style.content = 'Bookmarked'
-});
-
 gotItBtn.addEventListener('click',(clckEvent)=>{
     supportWindow.style.visibility = 'hidden';
 });
@@ -33,4 +25,18 @@ gotItBtn.addEventListener('click',(clckEvent)=>{
 continueBtn.addEventListener('click',(clicked)=>{
     supportWindow.style.visibility = 'visible';
     backThisProjectWindow.style.visibility = 'hidden';
-})
+});
+
+bookmarkButton.addEventListener('click',(clickedEvent)=>{
+    count++;
+    let currEvent = count % 2 === 0 ? 'Bookmark':'Bookmarked';
+    bookmarkButton.innerHTML = currEvent;
+    if (currEvent === 'Bookmarked'){
+        bookmarkButton.style.color = 'hsl(0, 0%, 48%)';
+        bookmarkLogo.style.fill = 'hsl(0, 0%, 48%)';
+    }else{
+        bookmarkButton.style.color = 'hsl(176, 72%, 28%)';
+        bookmarkLogo.style.fill = 'hsl(176, 72%, 28%)';
+    }
+
+});

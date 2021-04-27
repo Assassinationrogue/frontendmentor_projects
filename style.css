@@ -332,6 +332,7 @@ header > nav > ul > li > a{
 }
 
 .no_reward{
+
     appearance: none;
    -webkit-appearance: none;
    -moz-appearance: none;
@@ -464,7 +465,7 @@ header > nav > ul > li > a{
 }
 
 .support_window{
-    height: 250px;
+    height: 350px;
     width: 400px;
     background-color: white;
     padding: 20px;
@@ -472,7 +473,7 @@ header > nav > ul > li > a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(35%,-1017%);
+    transform: translate(35%,-735%);
     position: relative;
     z-index: 20;
     visibility: hidden;
@@ -498,5 +499,6 @@ header > nav > ul > li > a{
 
 .support_window > h2{
     margin-bottom: 20px;
-    color: var(--primary-color-1);
+   margin-top: 10px;
 }
+
