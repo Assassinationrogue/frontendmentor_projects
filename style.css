@@ -72,6 +72,7 @@ header > nav > ul > li > a{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.514);
 }
 .content_box{
     height: 250vh;
@@ -306,7 +307,7 @@ header > nav > ul > li > a{
 /* for "Back this project"  button*/
 
 .pledge_button{
-    visibility: visible ;
+    visibility: hidden ;
     height: 1100px;
     width: 750px;
     background-color: white;
@@ -315,10 +316,12 @@ header > nav > ul > li > a{
     margin-bottom: 10%;
     border-radius: 10px; 
     position: relative;
-    /* transform: translate(-36%,-420%);   */
+    transform: translate(-26%,-150%);  
     padding: 30px 40px;
     z-index: 20;
     padding-bottom: 20px;
+    box-shadow: 1px solid var(--neutral-color-4);
+    transition: all 0.3s ease-in;
 }
 
 .pledge_button * p,p{
@@ -455,4 +458,25 @@ header > nav > ul > li > a{
     padding-right: 2px;
 }
 
+.close_btn{
+    float: right;
+    cursor: pointer;
 
+}
+
+.support_window{
+    height: 250px;
+    width: 550px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.support_window > h2{
+    margin-bottom: 20px;
+    color: var(--primary-color-1);
+}
