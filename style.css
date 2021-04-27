@@ -475,8 +475,10 @@ header > nav > ul > li > a{
     transform: translate(35%,-1017%);
     position: relative;
     z-index: 20;
-    visibility: visible;
+    visibility: hidden;
     border-radius: 10px;
+    transition: visbility 0.2s ease-out;
+    transition-delay: 0.5s;
 }
 
 .got_it{
