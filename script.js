@@ -7,7 +7,10 @@ const bookmarkLogo = document.querySelector('.svg_circle')
 const gotItBtn = document.querySelector('.got_it');
 const supportWindow = document.querySelector('.support_window');
 const continueBtn = document.querySelector('.Continue');
-const checkBoxes = document.querySelector('.no_reward');
+const checkBoxes = document.querySelector('.allCheckBoxes');
+const pledgeButton = document.querySelector('.pledge_button');
+const boxStyling = document.querySelector('.box-styling');
+
 
 let count = 0;
 button1.addEventListener('click',(clicked)=>{
@@ -42,4 +45,15 @@ bookmarkButton.addEventListener('click',(clickedEvent)=>{
 
 });
 
-console.log(checkBoxes)
+let currentCheckBox = checkBoxes.childNodes;
+
+for (let currIndex = 0; currIndex < currentCheckBox.length; currIndex++){
+    if (currIndex % 2 === 1){
+        console.log(currentCheckBox[currIndex])
+    }
+    
+}
+
+boxStyling.addEventListener('click',(e)=>{
+    boxStyling.style.boxShadow = '1px solid hsl(176, 50%, 47%)'
+})
