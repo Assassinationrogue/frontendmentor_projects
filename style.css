@@ -256,6 +256,38 @@ header > nav > ul > li > a{
     margin-top: 20px;
 }
 
+@media screen and (max-width:360px){
+    .progress_bar{
+        width: 75vw;
+    }
+
+    .es-section-2{
+        margin-left: 20px;
+
+    }
+
+    .report_list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .report_list > li{
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+
+    .inner-bar{
+        width: 55%;
+    }
+}
+
 .inner-bar{
     width: 87%;
     height: inherit;
