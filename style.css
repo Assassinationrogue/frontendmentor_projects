@@ -257,6 +257,8 @@ header > nav > ul > li > a{
 }
 
 @media screen and (max-width:360px){
+
+    
     .progress_bar{
         width: 75vw;
     }
@@ -285,6 +287,18 @@ header > nav > ul > li > a{
 
     .inner-bar{
         width: 55%;
+    }
+
+    .title_tab{
+        flex-direction: column;
+    }
+
+    .bottom_tab{
+        flex-direction: column;
+    }
+
+    .text_part{
+        margin: 20px 0px;
     }
 }
 
@@ -391,8 +405,21 @@ header > nav > ul > li > a{
     padding: 30px 40px;
     z-index: 20;
     padding-bottom: 20px;
-    box-shadow: 1px solid var(--neutral-color-4);
+    box-shadow: 2px 2px 10px var(--neutral-color-2);
     transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width:360px){
+    .pledge_button{
+        width: 95vw;
+        height: 1550px;
+        
+    }
+
+    .top-section{
+        flex-direction: column;
+    }
+    
 }
 
 .box-styling:hover{
@@ -555,14 +582,15 @@ header > nav > ul > li > a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    bottom: 160%;
+    bottom: 140%;
     left: 20%;
     position: relative;
     z-index: 20;
-    visibility: hidden;
+    visibility: visible;
     border-radius: 10px;
     transition: visbility 0.2s ease-out;
     transition-delay: 0.5s;
+    box-shadow: 2px 2px 10px var(--neutral-color-2);
 }
 
 .got_it{
