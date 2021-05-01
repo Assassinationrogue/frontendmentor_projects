@@ -10,6 +10,8 @@ const continueBtn = document.querySelector('.Continue');
 const checkBoxes = document.querySelector('.allCheckBoxes');
 const pledgeButton = document.querySelector('.pledge_button');
 const boxStyling = document.querySelector('.box-styling');
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const hamburgerIcon = document.querySelector('.hamburger');
 
 
 let count = 0;
@@ -56,4 +58,16 @@ for (let currIndex = 0; currIndex < currentCheckBox.length; currIndex++){
 
 boxStyling.addEventListener('click',(e)=>{
     boxStyling.style.boxShadow = '1px solid hsl(176, 50%, 47%)'
+})
+
+hamburgerIcon.addEventListener('click',(e)=>{
+    count++;
+    let currEvent = count % 2 === 0 ? 'visible':'hidden';
+    
+    if (currEvent === 'disable'){
+        hamburgerMenu.style.visibility = currEvent;
+        
+    }else{
+        hamburgerMenu.style.visibility = currEvent;
+    }
 })

@@ -63,6 +63,7 @@ header > nav > ul{
     position: absolute;
     z-index: 29;
     left: 2%;
+    visibility: hidden;
 }
 
 .hamburger-menu > ul > li{
@@ -563,9 +564,7 @@ header > nav > ul > li > a{
     }
 
     .hamburger{
-        visibility: visible;
-        
-        
+        visibility: visible;    
     }
 
     .logo{
