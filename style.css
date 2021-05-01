@@ -238,7 +238,7 @@ header > nav > ul > li > a{
 
 .progress_bar{
     margin-left: 20px ;
-    width: 550px;
+    width: 95%;
     height: 15px;
     background-color: var(--neutral-color-3);
     border-radius: 10px;
@@ -338,14 +338,11 @@ header > nav > ul > li > a{
 .pledge_button{
     visibility: hidden ;
     height: 1100px;
-    width: 750px;
+    width: 99%;
     background-color: white;
-    margin-top: -5%;
-    margin-left: 26%;
-    margin-bottom: 10%;
     border-radius: 10px; 
     position: relative;
-    transform: translate(-26%,-150%);  
+    transform: translate(0%,-150%);  
     padding: 30px 40px;
     z-index: 20;
     padding-bottom: 20px;
