@@ -46,8 +46,31 @@ header > nav > ul{
 }
 
 .hamburger{
-    float: right;
+    position: absolute;
+    left: 85%;
+    top: 5%;
     visibility: hidden;
+}
+
+.hamburger-menu{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: var(--neutral-color-1);
+    width: 95vw;
+    box-shadow: 2px 2px 10px var(--neutral-color-2);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 29;
+    left: 2%;
+}
+
+.hamburger-menu > ul > li{
+    list-style: none;
+    margin: 40px 0px;
+    font-weight: var(--weight-3);
+    border-bottom: 1px solid var(--neutral-color-2);
+    padding-bottom: 10px;
 }
 
 .logo{
@@ -312,7 +335,7 @@ header > nav > ul > li > a{
 /* for "Back this project"  button*/
 
 .pledge_button{
-    visibility: visible ;
+    visibility: hidden ;
     height: 1100px;
     width: 750px;
     background-color: white;
@@ -522,13 +545,27 @@ header > nav > ul > li > a{
     /* for 360px */
 
 @media screen and (max-width:360px){
+    .header{
+        margin: 0px;
+    }
+    .container{
+        position: relative;
+        transform: translateY(-11%);
+        z-index: -1;
 
+    }
+
+    .content_box{
+        transform: translateY(-2%);
+    }
     .list_menus{
         display: none;
     }
 
     .hamburger{
         visibility: visible;
+        
+        
     }
 
     .logo{
