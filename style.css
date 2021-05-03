@@ -228,7 +228,7 @@ header > nav > ul > li > a{
 
 .report_list > li {
     border-right: 1px solid var(--neutral-color-2);
-    padding-right: 50px;
+    padding-right: 5%;
 }
 
 .report_list > li > h4{
@@ -342,12 +342,15 @@ header > nav > ul > li > a{
     background-color: white;
     border-radius: 10px; 
     position: relative;
-    transform: translate(0%,-150%);  
+    /* transform: translate(0%,-150%);   */
+    top: -90%;
+    transform: translateY(-8%);
     padding: 30px 40px;
     z-index: 20;
     padding-bottom: 20px;
     box-shadow: 2px 2px 10px var(--neutral-color-2);
     transition: all 0.3s ease-in;
+    
 }
 
 .box-styling:hover{
@@ -403,15 +406,17 @@ header > nav > ul > li > a{
     margin-left: 10px;
 }
 
-.top-section{
-    display: flex;
-    justify-content: space-between;
-    
-}
+
 
 .top-section-part_1{
+    float: left;
     display: flex;
     margin-left: 10px;
+}
+
+.top-section-part_2{
+    position: relative;
+    margin-left: 70%;  
 }
 
 
@@ -586,6 +591,24 @@ header > nav > ul > li > a{
         cursor: pointer;
     }
 
+    .WO_reward{
+        display: grid;
+        grid-template-columns: 17px auto;
+    }
+
+    .top-section-part_1{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 5px;
+    }
+
+    .top-section-part_2{
+        margin-left: 70%;
+       bottom: -280%;
+       left: -90%;
+       
+    }
+
     .progress_bar{
         width: 75vw;
     }
@@ -631,7 +654,7 @@ header > nav > ul > li > a{
     .pledge_button{
         width: 95vw;
         height: 1750px;
-        
+        transform: translateY(-65%);
     }
 
     .top-section{
